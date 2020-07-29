@@ -9,6 +9,12 @@
     echo "Halaman Kelas";
   } else if($page == 'pengguna') {
     echo "Halaman Pengguna";
+  } else if($page == 'tahun') {
+    echo "Halaman Tahun Ajaran";
+  } else if($page == 'siswa') {
+    echo "Halaman Siswa";
+  } else {
+    echo "Dashboard";
   }
   ?>
   </title>

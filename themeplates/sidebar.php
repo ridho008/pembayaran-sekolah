@@ -48,7 +48,7 @@ if($page == 'siswa') {
                with font-awesome or any other icon font library -->
           <li class="nav-header">Administrator</li>
           <li class="nav-item has-treeview <?= $masterAktif1; ?>">
-            <a href="#" class="nav-link <?= $masterAktif2; ?>">
+            <a href="index.php" class="nav-link <?= $masterAktif2; ?>">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard

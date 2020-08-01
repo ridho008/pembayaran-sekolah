@@ -95,7 +95,7 @@ if(isset($_POST['aktifkan'])) {
       <tbody>
       	<?php 
         $no = 1;
-        $querySiswa = $conn->query("SELECT * FROM tb_siswa") or die(mysqli_error($conn));
+        $querySiswa = $conn->query("SELECT * FROM tb_siswa INNER JOIN tb_kelas ON tb_siswa.id_kelas = tb_kelas.id_kelas") or die(mysqli_error($conn));
 
         while ($data = $querySiswa->fetch_assoc()) {
         // menampilkan semua data di tabel kelas
@@ -106,7 +106,7 @@ if(isset($_POST['aktifkan'])) {
             <td><?= $no++; ?></td>
             <td><?= $data['nis']; ?></td>
             <td><?= $data['nama_siswa']; ?></td>
-            <td><?= $data['id_kelas']; ?></td>
+            <td><?= $data['nama_kelas']; ?></td>
             <td><?= $data['jk'] == 'L' ? 'Laki-Laki' : 'Perempuan'; ?></td>
             <td><?= $data['agama']; ?></td>
             <td><?= $data['status_siswa']; ?></td>

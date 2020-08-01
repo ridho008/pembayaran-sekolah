@@ -13,6 +13,14 @@
     if($aksi == '') {
       require_once 'page/siswa/index.php';
     }
-  } 
+  } else if($page == 'kenaikan') {
+    if($aksi == '') {
+      require_once 'page/kenaikan/index.php';
+    }
+  } else if($page == 'kelulusan') {
+    if($aksi == '') {
+      require_once 'page/kelulusan/index.php';
+    }
+  }
 ?>
 

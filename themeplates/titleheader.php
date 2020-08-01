@@ -12,6 +12,10 @@
               echo "Data Tahun Ajarang";
             } else if($page == 'siswa') {
               echo "Data Siswa";
+            } else if($page == 'kenaikan') {
+              echo "Data Kenaikan";
+            } else if($page == 'kelulusan') {
+              echo "Data kelulusan";
             } else {
               echo "Dashboard";
             }

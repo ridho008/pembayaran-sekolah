@@ -131,6 +131,24 @@ $aksi = $_GET['aksi'];
 <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
 <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <script>
+  function selectAll() {
+    var items = document.getElementsByName('pilih[]');
+    for(var i = 0; i < items.length; i++) {
+      if(items[i].type == 'checkbox') {
+        items[i].checked = true;
+      }
+    }
+  }
+
+  function unSelectALl() {
+    var items = document.getElementsByName('pilih[]');
+    for(var i = 0; i < items.length; i++) {
+      if(items[i] == 'checkbox') {
+        items[i].checked = false;
+      }
+    }
+  }
+
   $(function () {
     $("#example1").DataTable({
       "responsive": true,

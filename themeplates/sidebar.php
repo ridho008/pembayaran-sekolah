@@ -21,6 +21,18 @@ if($page == 'siswa') {
   $siswaAktif = 'active';
 }
 
+if($page == 'kenaikan') {
+  $masterAktif1 = 'menu-open';
+  $masterAktif2 = 'active';
+  $kenaikanAktif = 'active';
+}
+
+if($page == 'kelulusan') {
+  $masterAktif1 = 'menu-open';
+  $masterAktif2 = 'active';
+  $kelulusanAktif = 'active';
+}
+
 ?>
 <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
@@ -74,6 +86,22 @@ if($page == 'siswa') {
                   <p>Data Siswa</p>
                 </a>
               </li>
+              <li class="nav-item">
+            <a href="?p=kenaikan" class="nav-link <?= $kenaikanAktif; ?>">
+              <i class="far fa-circle nav-icon"></i>
+              <p>
+                Kenaikan Kelas
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="?p=kelulusan" class="nav-link <?= $kelulusanAktif; ?>">
+              <i class="far fa-circle nav-icon"></i>
+              <p>
+                Kelulusan Siswa
+              </p>
+            </a>
+          </li>
             </ul>
           </li>
           <li class="nav-item">
@@ -84,6 +112,7 @@ if($page == 'siswa') {
               </p>
             </a>
           </li>
+          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

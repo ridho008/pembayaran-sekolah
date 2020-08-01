@@ -13,6 +13,10 @@
     echo "Halaman Tahun Ajaran";
   } else if($page == 'siswa') {
     echo "Halaman Siswa";
+  } else if($page == 'kenaikan') {
+    echo "Halaman Kenaikan Kelas";
+  } else if($page == 'kelulusan') {
+    echo "Halaman Kelulusan Kelas";
   } else {
     echo "Dashboard";
   }
